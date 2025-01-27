@@ -1,0 +1,43 @@
+<div>
+    <h3>Date Pipes</h3>
+    <p>Short Date: {{ currentDate | date:'M/d/yy' }}</p>
+    <p>Full Date: {{ currentDate | date: 'fullDate' }}</p>
+    <p>Custom Date (MM/dd/yyyy): {{ currentDate | date:'MM/dd/yyyy' }}</p>
+    <p>Short Time: {{ currentDate | date:'shortTime' }}</p>
+    <p>Day of the Year: {{ currentDate | date: 'd' }}</p>
+    <p>Week of the Year: {{ currentDate | date:'w' }}</p>
+</div>
+
+<div>
+    <h3>Currency Pipes</h3>
+    <p>USD Standard: {{ price | currency:'USD':'symbol':'1.2-2' }}</p>
+    <p>USD with Currency Code: {{ price | currency:'USD ':'code':'1.2-2' }}</p>
+    <p>INR Format: {{ price | currency:'INR':'symbol':'1.2-2' }}</p>
+    <p>GBP Format: {{ price | currency:'GBP':'symbol':'1.2-2' }}</p>
+</div>
+
+<div>
+    <h3>Async Pipes</h3>
+    <p>Array Stream: {{ arrayStream$ | async }}</p>
+    <p>Transformed Object: {{ transformedData$ | async }}</p>
+</div>
+
+<div>
+    <h3>JSON Pipes</h3>
+    <p>Nested Arrays:</p>
+    <pre>{{ nestedArrays | json }}</pre>
+    <p>Complex Object:</p>
+    <pre>{{ complexData | json }}</pre>
+    <p>Mixed Data Types:</p>
+    <pre>{{ mixedTypes | json }}</pre>
+</div>
+
+<div>
+    <h3>Slice Pipes</h3>
+    <p>Middle Elements: {{ numbers | slice:3:6 }}</p>
+    <p>Negative Start: {{ numbers | slice:-3 }}</p>
+    <p>Last Two Characters: {{ longString | slice:-2 }}</p>
+    <p>First Five Characters: {{ longString | slice:0:5 }}</p>
+</div>
+
+<router-outlet />
