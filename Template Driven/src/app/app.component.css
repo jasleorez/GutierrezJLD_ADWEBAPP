@@ -1,0 +1,162 @@
+/* General Form Styling */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input.form-control:invalid {
+    border-color: red;
+  }
+  
+  input.form-control:valid {
+    border-color: green;
+  }
+  
+  input.form-control::placeholder {
+    color: #6c757d;
+  }
+  
+  /* Submit Button Styling */
+  button.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+  }
+  
+  button.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Error Message Styling */
+  .error-text {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* Form submission section */
+  .submission-info {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  .submission-info h3 {
+    color: #343a40;
+  }
+  
+  .submission-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .submission-info ul li {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    label {
+      font-size: 1rem;
+    }
+  
+    input.form-control {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    button.btn {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+  
+    input.form-control {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+  
+    button.btn {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  

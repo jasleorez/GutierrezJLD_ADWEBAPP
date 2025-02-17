@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>{{ title }}</h2>
+  <form (ngSubmit)="onSubmit()">
+    <!-- Username Field -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input class="form-control" type="text" name="username" [(ngModel)]="anytext" placeholder="Enter username" required>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" type="email" name="email" [(ngModel)]="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Age Field -->
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input class="form-control" type="number" name="age" [(ngModel)]="age" placeholder="Enter your age" required>
+    </div>
+
+    <!-- Password Field -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control" type="password" name="password" [(ngModel)]="password" placeholder="Enter your password" required>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit" [disabled]="!anytext || !email || !age || !password">
+        Submit
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="submitted">
+    <h3>Form Submission</h3>
+    <p>You have entered the following details:</p>
+    <ul>
+      <li>Username: {{ anytext }}</li>
+      <li>Email: {{ email }}</li>
+      <li>Age: {{ age }}</li>
+      <li>Password: {{ password }}</li>
+    </ul>
+  </div>
+</div>
