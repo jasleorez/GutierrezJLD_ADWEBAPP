@@ -1,0 +1,56 @@
+/* Style the form */
+form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style input fields */
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style submit button */
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style output section */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Style error messages */
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  
